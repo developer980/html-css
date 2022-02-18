@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100;300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-image: url("https://www.austintechnologycouncil.org/wp-content/uploads/2020/05/gaming-2_orig.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#header {
+  background-color: #2b2b2b;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  padding: 30px;
+  width: 30%;
+  text-align: center;
+  border: 3px solid #2b2b2b;
+  transition: ease-in;
+}
+#bar {
+  height: 60px;
+  background-color: #2b2b2b;
+  display: flex;
+  background-attachment: fixed;
+}
+.barButton {
+  height: 100%;
+  width: 200px;
+  border: none;
+  background-color: #2b2b2b;
+  color: silver;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+  border-radius: 0px;
+  font-family: Roboto Mono;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5;
+}
+.barButton:hover {
+  color: black;
+  background-color: silver;
+}
+
+.topbarButton1 {
+  height: 50%;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+  background-color: #2b2b2b;
+  border: 2px solid silver;
+  border-radius: 50px;
+  color: silver;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+  font-family: Roboto Mono;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5;
+}
+
+.topbarButton1:hover {
+  color: black;
+  background-color: silver;
+  border: 2px solid #2b2b2b;
+}
+
+.topbarButton2 {
+  height: 50%;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 30px;
+  background-color: #2b2b2b;
+  border: 2px solid rgb(95, 216, 115);
+  border-radius: 50px;
+  color: rgb(95, 216, 115);
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+  font-family: Roboto Mono;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5;
+}
+
+.topbarButton2:hover {
+  color: black;
+  background-color: rgb(95, 216, 115);
+  border: 2px solid #2b2b2b;
+}
+
+.sidebarButton {
+  height: 50px;
+  width: 100%;
+  border: none;
+  color: #2b2b2b;
+  transition: color 0.5s;
+  background: none;
+  border-radius: 0px;
+  font-family: Roboto Mono;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: left;
+  margin-top: 5;
+}
+.sidebarButton:hover {
+  color: silver;
+}
+
+.myDiv {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.box {
+  background-color: #dedede;
+  margin: 40px;
+  width: 400px;
+  height: fit-content;
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #595959;
+}
+.box1 {
+  background-color: #dedede;
+  margin: 40px;
+  width: 400px;
+  height: fit-content;
+  font-size: 30px;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #595959;
+}
+.box2 {
+  background-color: #dedede;
+  margin: 20px;
+  width: 350px;
+  height: 550px;
+  font-size: 20px;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #595959;
+}
+.def {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+  color: #595959;
+}
+.def1 {
+  font-size: 30px;
+  margin-left: 10px;
+  width: 60%;
+  border-radius: 15px;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.img {
+  width: 350px;
+  height: 300px;
+  margin: 40px;
+}
+#img1 {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.long_description {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  margin: 5px;
+}
+.description {
+  padding: 5px;
+}
+.bodyDiv {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.section {
+  width: 15%;
+  background-color: #2b2b2b;
+}
+.section1 {
+  width: 85%;
+  height: 100%;
+}
+#sideBar {
+  height: 100%;
+  background-color: #8f8f8f;
+}
+.buttonSection {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#login {
+  margin: auto;
+  height: fit-contentS;
+}
+#sign_up {
+  margin: auto;
+  height: fit-contentS;
+}
+.email {
+  grid-area: email;
+}
+.username {
+  grid-area: username;
+}
+.password {
+  grid-area: password;
+}
+.sign_in {
+  grid-area: login;
+}
+.sign_up {
+  grid-area: create;
+}
+.login-section {
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  padding: 100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 40px 40px 40px 40px;
+  grid-template-areas:
+    "email email"
+    "username username"
+    "password password"
+    "login create";
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.game_submision {
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  padding: 100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 40px 40px 40px 40px;
+  grid-template-areas:
+    "name version"
+    "description description"
+    "description description"
+    "url submit";
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.login-section > div {
+  padding: 10px;
+}
+.game_submision > div {
+  text-align: center;
+  padding: 30px;
+}
+.inputs {
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid rgb(92, 92, 92);
+  padding: 5px;
+}
+.buttons {
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid rgb(92, 92, 92);
+  font-family: Roboto;
+  transition: background-color 0.5s;
+}
+.buttons:hover {
+  background-color: rgb(92, 92, 92);
+  color: white;
+}
+.i_buttons {
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid rgb(201, 0, 0);
+  font-family: Roboto;
+  color: rgb(201, 0, 0);
+  transition: background-color 0.5s;
+}
+.i_buttons:hover {
+  background-color: rgb(201, 0, 0);
+  color: white;
+}
+#name {
+  grid-area: name;
+}
+
+#appversion {
+  grid-area: version;
+}
+
+#description {
+  grid-area: description;
+}
+
+#applink {
+  grid-area: url;
+}
+
+#submit {
+  grid-area: submit;
+}
+
+#description_text {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgb(92, 92, 92);
+  padding: 5px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 600px 600px;
+  grid-template-areas:
+    "a b c"
+    "d e f";
+
+  padding: 10px;
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+.item3 {
+  grid-area: c;
+}
+.item4 {
+  grid-area: d;
+}
+.item5 {
+  grid-area: e;
+}
+.item6 {
+  grid-area: f;
+}

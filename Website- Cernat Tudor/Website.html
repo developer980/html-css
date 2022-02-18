@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA_Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Style1.css" />
+    <script src="Script.js"></script>
+    <title>My website</title>
+  </head>
+  <body>
+    <div id="bar" style="flex-direction: row-reverse; position:fixed; top:0px; bottom:auto; width:100%;">
+      <button class="topbarButton1" onclick="openWindow(event, 'login')">
+        Sign in
+      </button>
+      <button class="topbarButton2" onclick="openWindow(event, 'submit')">
+        Submit your game
+      </button>
+      <button
+        id="home"
+        class="topbarButton1"
+        onclick="goHome(event, 'main')"
+      >
+        Home
+      </button>
+    </div>
+    <div class="window" id="main">
+      <div id="header">
+        <div
+          id="title"
+          style="
+            font-family: 'Roboto mono', sans-serif;
+            color: silver;
+            font-size: 40px;
+          "
+        >
+          <b></b> Video games
+        </div>
+      </div>
+
+      <div id="bar">
+        <button class="barButton" onclick="openTab(event, 'Despre')">
+          Despre jocuri
+        </button>
+        <button class="barButton" onclick="openTab(event, 'Istorie')">
+          Istoria jocurilor
+        </button>
+        <button class="barButton" onclick="openTab(event, 'myGames')">
+          Curiozități
+        </button>
+      </div>
+      <div
+        id="Despre"
+        class="tab"
+        style=" padding: 300"
+      >
+        <div class="bodyDiv">
+          <div class="section">
+            <div id="sideBar">
+              <div class="buttonSection">
+                <button class="sidebarButton" onclick="openSection(event,'despre_jocuri')">Despre jocuri</button>
+                <button class="sidebarButton" onclick="openSection(event,'arcade')">Jocuri arcade</button>
+                <button class="sidebarButton" onclick="openSection(event,'first-person')">Jocuri first-person shooter</button>
+                <button class="sidebarButton" onclick="openSection(event,'strategie')">Jocuri de strategie</button>\
+              </div>
+            </div>
+          </div>
+
+          <div class="section1" id="despre_jocuri" style="background-color: #fff3d1;">
+            <div class="def">
+              <p>
+                De-a lungul timpului, industria gaming-ului s-a dezvoltat
+                constant, ajungând de la simple adunături de pixeli la adevărate
+                simulări ale realității, motoarele de grafică apdatându-se
+                constant, reușind să ofere jucătorilor experiențe cât mai
+                realistice în gaming.
+              </p>
+            </div>
+
+            <div class="myDiv">
+              <div class="box">
+                Un joc video reprezintă o modalitate prin care o
+                persoană(jucător) interacționează într-un mod distractiv cu o
+                interfață grafică generată de un computer.
+              
+              
+            </div>
+              <div class="box2">
+              <img
+                id="img1"
+                src="https://ak.picdn.net/shutterstock/videos/4649027/thumb/1.jpg"
+              />
+              <div class="description">
+                Jocurile pentru PC sunt jocuri jucate pe un computer,
+                reprezentant de un ansamblu dintre o unitate de bază, la care se
+                adaugă un ecran pe care aceasta redă vizual jocul. Ca și sisteme
+                de input, un PC este însoțit de un mouse și o tastatură, lucruri
+                esențiale în facilitarea controlului jucătorului asupra jocului.
+              </div>
+              </div>
+
+              <div class="box2">
+              <img
+                id="img1"
+                src="https://dojotech.ro/wp-content/uploads/2020/10/Jocurile-PS4-care-nu-vor-functiona-pe-consola-PS5.jpg"
+              />
+              <div class="description">
+                Există de asemenea jocuri pentru console, sisteme speciale, prin
+                intermediul cărora jocurile sunt redate prin intermediul
+                televizorului. Ca și sisteme de input, consolele dispun de
+                controllere, un fel de telecomenzi speciale, caracterizate de un
+                ansamblu de butoane și manete, menite să ofere controlul
+                jucătorilor asupra jocurilor ce rulează pe console.
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="section1" id="arcade" style="background-color: #d1ffff; display:none">
+              <div class="def">
+                <p>
+                  Un joc arcade este un dispozitiv folosit pentru divertisment care funcționează cu monede,
+                  de obicei instalat în locuri publice, cum ar fi restaurante, baruri și, în special, locuri 
+                  de divertisment. Cele mai multe jocuri arcade sunt jocuri video, jocuri de pinball 
+                  sau jocuri electro-mecanice.
+                </p>
+              </div>
+  
+              <div class="myDiv">
+                <div class="box2">
+                  <img
+                    id="img1"
+                    src="https://s.wsj.net/public/resources/images/BN-XJ461_ARCADE_M_20180207175117.jpg"
+                  />
+                  <div class="description">
+                    Epoca de aur a jocurilor video arcade a durat de la sfârșitul anilor 1970 până la mijlocul anilor 1990.
+                    În timp ce jocurile arcade erau încă relativ populare la sfârșitul anilor 1990, această metodă de divertisment
+                    a intrat într-un declin continuu de popularitate în Occident, odată cu trecerea consolelor de jocuri video
+                    pentru acasă de la grafica 2D la grafica 3D.
+                      </div>
+                  </div>
+                <div class="box2">
+                <img
+                  id="img1"
+                  src="data:image/png;base64,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"
+                />
+                <div class="long_description" style="height:320px">                  
+                  Pong este un joc video din 1972 dezvoltat de Atari care simulează un joc de tenis sau tenis de masă.
+                  Acesta a fost un mare hit până în 1976 existând zeci de versiuni de la mai multe companii pentru arcade
+                  și console. Companiile care făceau versiuni de pong schimbau puțin sau foarte mult că să nu se asocieze
+                  cu Atari de exemplu: Pong-Tron, Super pong , Super pong ten, Pong double, etc.Odată cu 1976 Pong și
+                  pierdut popularitatea dar a rămas în istorie ca unul dintre cele mai influente jocuri video din istorie .
+                </div> 
+              </div>
+  
+                <div class="box2">
+                <img
+                  id="img1"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/NES-Console-Set.jpg/1200px-NES-Console-Set.jpg"
+                />
+                <div class="long_description" style="height:320px">
+                  Ca parte a celei de-a treia generații de jocuri video, Nintendo Entertainment System (abreviat ca NES)
+                  s-a lansat în America de Nord în 1985 și în Europa în decursul anilor 1986 și 1987. Consola a fost 
+                  inițial lansată în Japonia cu numele de Family Computer (abreviat ca Famicom) în 1983. Fiind cea mai
+                  vândută consolă din timpurile sale, NES-ul a ajutat industria de jocuri din Statele Unite să ia din
+                  nou amploare după căderea din 1983. NES-ul a fost vândut împreună cu jocul Super Mario Bros., unul
+                  dintre cele mai vândute jocuri din toate timpurile.
+                </div> 
+              </div>  
+            </div>    
+          </div>
+              <div class="section1" id="first-person" style="background-color: #6f6dfc; display:none">
+                <div class="def">
+                  <p>
+                    Un first-person shooter este un gen de joc video în care acțiunea se desfășoară din perspectiva protagonistului
+                    ,iar jucătorul are capacitatea de a vedea lumea prin ochii acestuia.. Jocul trebuie să aibă printre elementele 
+                    sale conjuncturale și prezența armelor.
+                  </p>
+                </div>
+    
+                <div class="myDiv">
+                  <div class="box2">
+                    <img
+                      id="img1"
+                      src="https://www.thecinemawarehouse.com/wp-content/uploads/2014/12/dc-1936-21318787719.jpg"
+                    />
+                    <div class="long_description" style="height:250px">
+                      Half-Life este o serie de jocuri first-person-shooter (FPS) dezvoltate și publicate de Valve.
+                      Jocurile combină lupta cu împușcături, puzzle-uri și povestiri. Originalul Half-Life , primul produs Valve,
+                      a fost lansat în 1998 pentru Windows, cu succes critic și comercial. Jucătorii îl controlează pe Gordon Freeman ,
+                      un om de știință care trebuie să supraviețuiască unei invazii extraterestre. Secvențele inovatoare cu scenarii
+                      au influențat genul FPS, iar jocul a inspirat numeroase moduri dezvoltate de comunitate , inclusiv jocurile
+                      multiplayer Counter-Strike și Day of Defeat . Half-Life a fost urmată de expansiunile Opposing Force (1999),
+                      Blue Shift (2001) și Decay (2001), dezvoltate de Gearbox Software .
+                    </div>
+                  </div>
+                  <div class="box2">
+                  <img
+                    id="img1"
+                    src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2016/04/19/451248-counter-strike-1.6-steam-valve-youtube.jpg"
+                  />
+                  <div class="long_description" style="height:310px">
+                    Counter-Strike ( CS ) este o serie dejocuri video multiplayer first-person-shooter în care echipe de teroriști se
+                    luptă pentru a comite un act de teroare (bombardare, luare de ostatici, asasinare), în timp ce antiterorisții
+                    încearcă să îl prevină (dezamorsarea bombei, salvarea ostaticilor). Seria a început pe Windows în 1999, odată
+                    cu lansarea primului joc, Counter-Strike . A fost lansat inițial ca o modificare ("mod") pentru Half-Life,
+                    care a fost proiectat de Minh "Gooseman" Le și Jess "Cliffe" Cliffe înainte de drepturile asupra proprietății
+                    intelectuale a modului.au fost achiziționate de către Valve , de dezvoltatorii de Half-Life , care apoi
+                    transformat Counter-Strike într - un produs de vânzare cu amănuntul.
+                  </div>
+                </div>
+                  <div class="box2">
+                  <img
+                    id="img1"
+                    src="https://i.ytimg.com/vi/cdQh7ywFpEk/maxresdefault.jpg"
+                  />
+                  <div class="description">
+                    Call of Duty este o serie de jocuri video first-person și third-person shooter. Acțiunea primelor jocuri din
+                    serie este stabilită, în principal, în timpul celui de-al Doilea Război Mondial; începând cu Modern Warfare
+                    urmat de Modern Warfare 2, Call of Duty: Modern Warfare 3 și Black Ops , Call of Duty: Black Ops 2, stabilite
+                    într-un viitor apropriat, respectiv în timpul Războiului Rece. Pe lângă, acțiunea din Call of Duty: Advanced
+                    Warfare este plasată în anul 2059.  
+                  </div>  
+                </div> 
+              </div>
+            </div>
+                <div class="section1" id="strategie" style="background-color: #c9ff8b; display:none">
+                  <div class="def">
+                    <p>
+                      Jocurile de strategie sunt jocuri în care capabilitatea jucătorilor de a lua decizii 
+                      are o influență determinantă în rezultatul acestora. În aceste jocuri jucătorii au interese 
+                      opuse, în totalitate sau parțial, acest aspect cauzând un anumit comportament și o anumită 
+                      strategie în abordarea jocului. Strategiile sau combinațiile de strategii ale jucătorilor 
+                      sunt recompensate cu un anumit câștig. La finalul jocului are loc o comparare a rezultatelor
+                      și o corelare a acestora cu strategiile efectuate. Strategia este modul de acțiune ales de 
+                      fiecare jucător (individuală) sau de toți jucătorii (strategia jocului).
+                    </p>
+                  </div>
+                    <div class="myDiv">
+                     <div class="box2">
+                    <img
+                      id="img1"
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Champions_Of_The_Magnificent_City.JPG/220px-Champions_Of_The_Magnificent_City.JPG"
+                    />
+                    <div class="long_description" style="height: 250px;">
+                      Age of Empires (în engleză Epoca Imperiilor) este o serie de jocuri de real time strategy (RTS).
+                       Jocurile au fost dezvoltate în studiourile Ensemble Studios și publicate sub licență Microsoft.
+                        Jocurile sunt structurate pe anumite perioade de timp din istorie, de obicei legate de civilizații,
+                         imperii de mult apuse. Primul joc a apărut în 1997, și a fost urmat de alte șase, dintre care patru sunt pachete suplimentare,
+                       si de unul înrudit, numit Age of Mythology. Jocurile Age of Empires s-au vândut în mai mult de 15 000 000
+                        de copii,[1] făcându-l unul dintre cele mai cunoscute jocuri pe calculator din genul său.
+                    </div>
+                    </div>
+      
+                    <div class="box2">
+                    <img
+                      id="img1"
+                      src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ay/AYJ0P9WLD7IP1602720127239.jpg"
+                    />
+                    <div class="long_description" style="height:320px;">
+                      StarCraft este un joc video de strategie în timp real, științifico-fantastic militar, dezvoltat de
+                      irma Blizzard Entertainment. Primul joc al seriei StarCraft a fost lansat în versiunea pentru Microsoft
+                      Windows pe 31 martie 1998. Fiind vândut în peste 11 milioane de exemplare până în februarie 2009, 
+                      este unul dintre cele mai bine vândute jocuri pentru computerele personale. O versiune pentru Mac 
+                      OS a apărut în martie 1999, iar o adaptare pentru Nintendo 64, produsă în cooperare cu Mass Media Games,
+                      a fost lansată pe 13 iunie 2000. Jocul a fost dezvoltat din anul 1995, imediat după apariția jocului
+                      Warcraft II. StarCraft a debutat la expoziția E3 din 1996, unde a fost comparat nefavorabil cu Warcraft II.
+                      Drept urmare, proiectul a fost revizuit complet și a fost dezvăluit publicului la începutul anului 1997,
+                      fiind primit mult mai bine de critici. Povestea jocului a fost adaptată și extinsă printr-o serie de romane,
+                      o expansiune denumită StarCraft: Brood War și alte două extensii autorizate. Peste 12 ani mai târziu, 
+                      continuarea jocului, StarCraft II: Wings of Liberty, a fost lansată în iulie 2010 urmată de două pachete 
+                      de expansiune, Heart of the Swarm și Legacy of the Void.
+                      </div>                  
+                    </div>                  
+                  </div>                               
+                </div>                                
+              </div>                             
+          </div>
+        </div>
+      </div>
+      <div
+        id="Istorie"
+        class="tab"
+        style="background-color: #370869; padding: 300; display: none"
+      >
+        <div class="myDiv">
+          <div class="def1">
+            Primele jocuri video au fost realizate între anii 1950 și 1960 de
+            Jon Snell și rulau pe platforme cum ar fi osciloscopul, sau
+            computere EDSAC. Cel mai vechi joc pe calculator, o simulare de
+            rachete, a fost creat în 1947 de către Thomas T. Goldsmith Jr. și de
+            Estle Ray Mann[3]. O cerere pentru acordarea de drepturi de autor a
+            fost făcută pe 25 ianuarie 1947 și patentată ca U.S. Patent
+            #2,455,992 din data de 14 decembrie 1948. Mai târziu în 1952, o
+            versiune a jocului X și 0 numită Noughts and Crosses a fost creată
+            de A. S. Douglas ca parte a disertației de doctorat la Universitatea
+            din Cambridge. Jocul rula pe un computer al universității numit
+            Electronic Delay Storage Automatic Calculator (EDSAC).
+            <div class="box2">
+              <img
+                id="img1"
+                src="https://thereader.mitpress.mit.edu/wp-content/uploads/2020/11/pacman-lead-graphic-700x420.jpg"
+              />
+              <div style="margin: 10px">
+                Jocul Pac-Man conceput de firma Namco în 1980 a fost un hit și a
+                devenit un adevărat fenomen cultural. Jocul a lansat un desen
+                animat și cântece pop, devenind unul dintre cele mai copiate
+                jocuri din toate timpurile.
+              </div>
+            </div>
+            <div class="box2">
+              <img
+                id="img1"
+                src="https://i.ytimg.com/vi/cO2wnlCSffI/maxresdefault.jpg"
+              />
+              <div style="margin: 10px">
+                <div class="long_description" style="height: 310px">
+                Seria de jocuri arcade din 1981 Donkey Kong , prezentând
+                personajul omonim ca antagonist principal într-un cadru de
+                construcții industriale și debutul atât al Donkey Kong-ului, cât
+                și al lui Mario.personaje. Titlul a fost un succes masiv și a
+                fost urmat de două sequel-uri lansate în 1982 și 1983. În 1994,
+                franciza a fost relansată cu platforma Donkey Kong Country , în
+                care Donkey Kong învinge o varietate de inamici antropomorfi ,
+                în principal Kremlings , un clan de crocodili conduși de regele
+                K. Rool care îi antagonizează pe Kong furându-le tezaurul de
+                banane.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="width: fit-content">
+            <div class="box2">
+              <img
+                id="img1"
+                src="https://www.bnl.gov/coreimages/d2231008_tennis4two-300px.jpg"
+              />
+              <div style="margin: 10px">
+                <div class="long_description" style="height: 210px">
+                  Există o controversă în ceea ce privește care este primul joc
+                  video. Deși termenul de video se aplică unei imagini generate
+                  electronic pe un monitor, jocuri video sunt considerate a fi
+                  pe mai multe platforme. Cel mai vechi joc electronic
+                  interactiv a fost creat de Thomas T. Goldsmith Jr. și Estle
+                  Ray Mann pe un tub catodic. Patentul invenției a fost
+                  înregistrat la 25 ianuarie 1947. Jocul era asemănător cu un
+                  radar din al doilea război mondial.
+                </div>
+              </div>
+            </div>
+
+            <div class="box2">
+              <img
+                id="img1"
+                src="https://static.posters.cz/image/1300/calendar-super-mario-i77855.jpg"
+              />
+              <div style="margin: 10px">
+                <div class="long_description" style="height: 160px">
+                  EMario Bros. este un joc video apărut în anul 1983, disponibil
+                  atât în varianta Arcade (cabină de joc ce funcționa cu monezi)
+                  cât și pe consola de jocuri video pe televizor numită simplu
+                  Nintendo sau NES (Nintendo Entertainment System). Acesta este
+                  de fapt și primul joc în care Mario este prezentat cu acest
+                  nume, dacă se ține cont de faptul că jocul de debut al acestui
+                  personaj cheie îl constituie în fapt un altul și anume Donkey
+                  Kong, unde primește un rol secundar sub numele de „Jumpman”,
+                  scopul jocului fiind acela de a-și salva prietena pe nume
+                  Pauline, care fusese răpită de către gorila Donkey Kong.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="myGames"
+        class="tab"
+        style="background-color: white; padding: 300; display: none"
+      >
+        <div class="menu">
+          <div class="item1">
+          <div class="box2">
+            <img
+              id="img1"
+              src="https://smallimg.pngkey.com/png/small/27-270956_mario-face-png-super-mario-face-png.png"
+            />
+            <div class="long_description" style="height: 130px">
+              Designerul jocului Mario, Shigeru Miyamoto, i-a dat personajului
+              mustata iconica, pentru ca jucatorii sa-i poata vedea nasul. Din
+              cauza capacitatilor grafice limitate din perioada in care jocul a
+              fost lansat, Miyamoto a ales si alte scurtaturi de proiectare. De
+              exemplu, i-a oferit instalatorului o palarie deoarece parul era
+              prea greu de desenat si animat, iar salopeta a fost aleasa pentru
+              ca jucatorii sa vada bratele personajului miscandu-se.
+            </div>
+          </div>
+        </div>
+          <div class="item2">
+          <div class="box2">
+            <img
+              id="img1"
+              src="https://cdn.dribbble.com/users/115698/screenshots/4204620/pizzapacman.jpg"
+            />
+            <div style="margin-bottom: 5px; margin:5px">
+              Ideea pentru cunoscutul joc Pac-Man a venit in timp ce creatorul
+              jocului manca pizza. Forma iconica a unui Pac-Man i-a venit in
+              minte dupa ce a luat o felie de pizza.
+            </div>
+          </div>
+        </div>
+          <div class="item3">
+          <div class="box2">
+            <img
+              id="img1"
+              src="https://xboxplay.games/uploadStream/18533.jpg"
+            />
+            <div class="description">
+              Cel mai mare joc video video din toate timpurile este World of
+              Warcraft. Jocul a facut peste 10 miliarde de dolari de-a lungul
+              duratei sale de viata.
+            </div>
+          </div>
+        </div>
+          <div class="item4">
+          <div class="box2">
+            <img
+              id="img1"
+              src="https://www.mobilissimo.ro/imgs/uploaded/images/Microsoft/Amalgam/xbox_5.jpg"
+            />
+            <div class="description">
+              Cunoscuta consola Xbox a fost numita initial DirectXbox. Mai
+              tarziu a devenit Xbox ca referire la API-ul grafic al Microsoft,
+              DirectX.
+            </div>
+          </div>
+        </div>
+          <div class="item5">
+          <div class="box2">
+            <img
+              id="img1"
+              src="https://i.pinimg.com/originals/40/eb/af/40ebafd4cdb31c02a4169b63a2004ae4.gif"
+            />
+            <div class="description">
+              Mortal Kombat este unul dintre cele mai de succes jocuri de lupta.
+              Cu toate acestea, el a fost dezvoltat in zece luni de o echipa de
+              doar patru oameni, iar in primele sase luni, jocul nu avea nici
+              macar un nume
+            </div>
+          </div>
+        </div>
+        <div class="item6">
+
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="window" id="login" style="display: none">
+      <form action="Website.html">
+        <div class="login-section">
+          <div class="email">
+            <input class="inputs" placeholder="Email" type="email" />
+          </div>
+          <div class="username">
+            <input class="inputs" placeholder="Password" type="password" />
+          </div>
+          <div class="sign_in">
+            <button type="submit" class="i_buttons">Sign in</button>
+          </div>
+          <div class="sign_up">
+            <button
+              type="button"
+              class="buttons"
+              onclick="openWindow(event,'sign_up')"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="window" id="submit" style="display: none">
+      <form action="Website.html">
+        <div class="game_submision">
+          <div id="name">
+            <input class="inputs" placeholder="Your app's name" />
+          </div>
+          <div id="appversion">
+            <input class="inputs" placeholder="Current version" />
+          </div>
+          <div id="description">
+            <textarea
+              id="description_text"
+              placeholder="Insert a detailed description of your app"
+            ></textarea>
+          </div>
+          <div id="applink">
+            <input class="inputs" placeholder="Link your app" />
+          </div>
+          <div id="submit">
+            <button type="submit" class="i_buttons">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="window" id="sign_up" style="display: none">
+      <form action="Website.html">
+        <div class="login-section">
+          <div class="email">
+            <input class="inputs" placeholder="Email" type="email" />
+          </div>
+          <div class="username">
+            <input class="inputs" placeholder="Username" type="text" />
+          </div>
+          <div class="password">
+            <input class="inputs" placeholder="Password" type="password" />
+          </div>
+          <div class="sign_in">
+            <button type="submit" class="i_buttons">Sign in</button>
+          </div>
+          <div class="sign_up"><button class="buttons">Sign up</button></div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
