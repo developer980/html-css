@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Mono&family=Roboto:wght@100;300&display=swap");
+nav {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  background-color: rgb(192, 192, 192);
+  width: 100%;
+  padding: 0px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.pg_link {
+  background: none;
+  color: rgb(53, 53, 53);
+  font-family: Parisienne;
+  height: 100%;
+  padding: 30px;
+  margin-right: 30px;
+  margin-top: 5px;
+  text-decoration: none;
+  transition: color 0.25s;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.pg_link:hover {
+  color: white;
+}
+
+.a1 {
+  text-decoration: none;
+  color: white;
+  font-family: Roboto;
+}
+
+header {
+  margin-top: 78px;
+  background-color: brown;
+  width: 100%;
+  height: 500px;
+}
+
+.nav_section_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_section_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.menu_button {
+  background: none;
+  color: white;
+  font-family: Parisienne;
+  font-size: 40px;
+  border: none;
+  height: 100%;
+  width: fit-content;
+  transition: all 0.25s;
+}
+
+.menu_button1 {
+  background: none;
+  color: white;
+  font-family: Parisienne;
+  font-size: 50px;
+  border: none;
+  width: 70%;
+  height: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.menu_button2 {
+  background: none;
+  color: white;
+  font-family: Parisienne;
+  font-size: 40px;
+  border: none;
+  height: 100%;
+  width: fit-content;
+  transition: all 0.25s;
+}
+
+.side_section {
+  width: 300px;
+  background-color: rgb(209, 209, 209);
+  height: 0;
+  display: none;
+  position: absolute;
+  left: 35.25%;
+  top: 100%;
+  animation: expand 0.25s;
+  animation-fill-mode: forwards;
+}
+.side_section1 {
+  width: 300px;
+  background-color: rgb(209, 209, 209);
+  height: 0px;
+  display: none;
+  position: absolute;
+  left: 42.6%;
+  top: 100%;
+  animation: expand2 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.side_link {
+  font-size: 0px;
+  color: rgb(82, 82, 82);
+  font-family: Parisienne;
+  animation: expand1 0.25s;
+  animation-fill-mode: forwards;
+  transition: all 0.25s;
+  text-decoration: none;
+}
+
+.side_link:hover {
+  color: white;
+}
+
+.menu_button:hover {
+  background-color: white;
+  color: rgb(48, 48, 48);
+}
+
+.menu_button2:hover {
+  background-color: white;
+  color: rgb(48, 48, 48);
+}
+
+.menu_button:hover:hover .side_section {
+  display: block;
+}
+
+.menu_button2:hover:hover .side_section1 {
+  display: block;
+}
+
+@keyframes expand {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 270px;
+  }
+}
+@keyframes expand1 {
+  from {
+    height: 0px;
+    font-size: 0px;
+  }
+  to {
+    height: 40px;
+    font-size: 30px;
+  }
+}
+
+@keyframes expand2 {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 230px;
+  }
+}
+
+body {
+  background-color: rgb(65, 65, 65);
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  background-color: rgb(255, 231, 164);
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and(max-width:600px) {
+  section {
+    background-color: rgb(164, 255, 199);
+  }
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  margin: 100px;
+  height: 350px;
+  margin-top: 100px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.25s;
+}
+
+.card:hover {
+  height: 400px;
+  width: 350px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: rgb(49, 49, 49);
+  color: brown;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 0px;
+}
+
+.img {
+  height: 70%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card_content {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+  font-family: Parisienne;
+  color: rgb(199, 199, 199);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(39, 39, 39);
+  width: 100%;
+  height: 300px;
+}
+.footer_content {
+  grid-template-rows: 200px;
+  grid-template-columns: 500px 500px 500px;
+  display: grid;
+  grid-template-areas: "col1 col2 col3";
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.col1 {
+  grid-area: col1;
+}
+.col2 {
+  grid-area: col2;
+}
+.col3 {
+  grid-area: col3;
+}
